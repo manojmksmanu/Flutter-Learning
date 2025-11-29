@@ -637,17 +637,15 @@ class _AnimatedWidgetBoxState extends State<_AnimatedWidgetBox>
                   ),
                   const SizedBox(width: 12),
 
-                  Row(
-                    children: [
-                      Text(
-                        widget.title,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87,
-                        ),
+                  Flexible(
+                    child: Text(
+                      widget.title,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87,
                       ),
-                    ],
+                    ),
                   ),
                 ],
               ),
