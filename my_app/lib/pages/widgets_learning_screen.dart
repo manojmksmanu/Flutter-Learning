@@ -104,7 +104,7 @@ class _WidgetTypesScreenState extends State<WidgetTypesScreen>
             flexibleSpace: FlexibleSpaceBar(
               title: const Text(
                 "Widget Explorer",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22 , color: Colors.white),
               ),
               background: Container(
                 decoration: BoxDecoration(
