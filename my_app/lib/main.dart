@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/pages/Login_screen.dart';
-import 'package:my_app/pages/list_widgets.dart';
-import 'package:my_app/pages/widgets_learning_screen.dart';
+import 'package:my_app/main_flutter_learning_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: WidgetTypesScreen());
+    return MaterialApp(debugShowCheckedModeBanner: false, home:FlutterLearningScreen());
   }
 }
