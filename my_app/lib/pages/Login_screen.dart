@@ -150,6 +150,7 @@ class _LoginScreenState extends State<LoginScreen>
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
+                                // ignore: deprecated_member_use
                                 color: Colors.blueAccent.withOpacity(0.4),
                                 blurRadius: 20,
                                 offset: const Offset(0, 10),
@@ -214,6 +215,7 @@ class _LoginScreenState extends State<LoginScreen>
                               borderRadius: BorderRadius.circular(12),
                             ),
                             elevation: 5,
+                            // ignore: deprecated_member_use
                             shadowColor: Colors.blueAccent.withOpacity(0.5),
                           ),
                           onPressed: _isLoading ? null : _handleLogin,
@@ -278,6 +280,7 @@ class _LoginScreenState extends State<LoginScreen>
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
+            // ignore: deprecated_member_use
             color: Colors.black.withOpacity(0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/components/Custom_modal.dart';
+import 'package:my_app/pages/widgets_learning_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -112,6 +113,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         CircleAvatar(
                           radius: 28,
+                          // ignore: deprecated_member_use
                           backgroundColor: Colors.blueAccent.withOpacity(0.2),
                           child: Icon(
                             Icons.person,
@@ -218,8 +220,43 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         color: Colors.green,
                       ),
                     ),
+                    _AnimatedCard(
+                      delay: 400,
+                      onTap: () {
+                        openModal(
+                          "Help & Support",
+                          "Get help and support for any issues.",
+                          Icons.help,
+                          Colors.green,
+                        );
+                      },
+                      child: homeCard(
+                        icon: Icons.help,
+                        title: "Help & Support",
+                        subtitle: "We're here to help you",
+                        color: Colors.green,
+                      ),
+                    ),
 
                     const SizedBox(height: 30),
+                    _AnimatedCard(
+                      delay: 500,
+                      onTap: () {
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (_) => const WidgetsLearningScreen()
+                        //   ),
+                        // );
+                      },
+                      child: homeCard(
+                        icon: Icons.school,
+                        title: "Learn Widgets",
+                        subtitle: "Basic widgets with explanation",
+                        color: Colors.teal,
+                      ),
+                    ),
+
                   ],
                 ),
               ),
@@ -242,6 +279,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
+            // ignore: deprecated_member_use
             color: Colors.blueAccent.withOpacity(0.3),
             blurRadius: 15,
             offset: const Offset(0, 8),
@@ -252,8 +290,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           _buildStatItem(Icons.task_alt, "Tasks", "12"),
+          // ignore: deprecated_member_use
           Container(height: 50, width: 1, color: Colors.white.withOpacity(0.3)),
           _buildStatItem(Icons.event, "Events", "5"),
+          // ignore: deprecated_member_use
           Container(height: 50, width: 1, color: Colors.white.withOpacity(0.3)),
           _buildStatItem(Icons.check_circle, "Done", "8"),
         ],
@@ -277,6 +317,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         const SizedBox(height: 4),
         Text(
           label,
+          // ignore: deprecated_member_use
           style: TextStyle(color: Colors.white.withOpacity(0.9), fontSize: 13),
         ),
       ],
@@ -308,6 +349,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
+              // ignore: deprecated_member_use
               color: color.withOpacity(0.1),
               borderRadius: BorderRadius.circular(12),
             ),
